@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N62-t9-Ja9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L30-Wm-0kr">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -8,10 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Months-->
         <scene sceneID="z4J-OH-saJ">
             <objects>
                 <navigationController id="N62-t9-Ja9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Months" image="calendar.circle" catalog="system" id="ahY-8q-xcv"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="k4K-Ye-mpH">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -22,7 +23,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRn-1y-KDF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-810" y="51"/>
+            <point key="canvasLocation" x="100.00000000000001" y="50.892857142857139"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -80,12 +81,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23.188405797101453" y="50.892857142857139"/>
+            <point key="canvasLocation" x="886.95652173913049" y="50.892857142857139"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Months View Controller-->
         <scene sceneID="ATN-7Y-Dyu">
             <objects>
-                <viewController storyboardIdentifier="SecondViewController" id="UAc-cI-ZHe" customClass="SecondViewController" customModule="Homework7__SergeyHots" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MonthsViewController" id="UAc-cI-ZHe" customClass="MonthsViewController" customModule="Homework7__SergeyHots" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fdu-Aj-9pd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,10 +123,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7IH-dg-7zA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="693" y="51"/>
+            <point key="canvasLocation" x="1602.8985507246377" y="50.892857142857139"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="1Dd-Rq-4CD">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="L30-Wm-0kr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tlU-1A-m0r">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="N62-t9-Ja9" kind="relationship" relationship="viewControllers" id="jSg-1A-gf4"/>
+                        <segue destination="GK7-5d-bWy" kind="relationship" relationship="viewControllers" id="mV7-Jw-kNX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BR9-Re-PPe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-909" y="-301"/>
+        </scene>
+        <!--Insta-->
+        <scene sceneID="l0p-Vg-jyk">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="GK7-5d-bWy" customClass="SecondViewController" customModule="Homework7__SergeyHots" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Oz-qN-aWQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TPY-jp-nxq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DlN-xH-P81"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TPY-jp-nxq" firstAttribute="leading" secondItem="DlN-xH-P81" secondAttribute="leading" id="JWu-21-wTw"/>
+                            <constraint firstItem="TPY-jp-nxq" firstAttribute="bottom" secondItem="DlN-xH-P81" secondAttribute="bottom" id="kGa-Va-aTa"/>
+                            <constraint firstItem="TPY-jp-nxq" firstAttribute="trailing" secondItem="DlN-xH-P81" secondAttribute="trailing" id="oXL-cN-G73"/>
+                            <constraint firstItem="TPY-jp-nxq" firstAttribute="top" secondItem="6Oz-qN-aWQ" secondAttribute="top" id="r5Z-SX-sG3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Insta" image="heart.text.square" catalog="system" id="Hrv-NE-4R2"/>
+                    <connections>
+                        <outlet property="postTableView" destination="TPY-jp-nxq" id="pbj-pr-SSd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nGE-dX-2ST" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100.00000000000001" y="-658.25892857142856"/>
         </scene>
     </scenes>
     <resources>
+        <image name="calendar.circle" catalog="system" width="128" height="121"/>
+        <image name="heart.text.square" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

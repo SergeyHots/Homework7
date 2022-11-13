@@ -38,7 +38,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+        let viewController = storyboard.instantiateViewController(withIdentifier: "MonthsViewController") as! MonthsViewController
         viewController.index = "\(indexPath.row + 1)"
         viewController.name = arrayOfMonths[indexPath.row]
         self.navigationController?.pushViewController(viewController, animated: true)
