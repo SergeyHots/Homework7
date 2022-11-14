@@ -22,5 +22,4 @@ class MonthsViewController: UIViewController {
         nameLabel.text = name
         
     }
-    
 }

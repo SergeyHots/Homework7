@@ -8,7 +8,6 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-    
 
     @IBOutlet weak var postTableView: UITableView!
     
@@ -24,7 +23,6 @@ class SecondViewController: UIViewController {
         self.postTableView.register(nib, forCellReuseIdentifier: "PostTableViewCell")
         
     }
-
 }
 
 extension SecondViewController: UITableViewDelegate, UITableViewDataSource {

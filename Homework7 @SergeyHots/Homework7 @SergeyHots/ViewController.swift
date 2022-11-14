@@ -9,7 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-
     @IBOutlet weak var tableView: UITableView!
     
     let arrayOfMonths: [String] = ["January","February","March","April","May","June","July","August","September","October","November","December"]
@@ -21,7 +20,6 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         
     }
-
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
